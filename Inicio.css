@@ -64,23 +64,24 @@ footer {
     padding: 20px;
 }
 
-/*Media Query para pantallas pequeñas*/
-@media screen and (max-width: 600px) {
-    .botones {
-        font-size: 1.2rem;
-        width: 30vw;
-        height: 10vh;
-        margin: 1vh;
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
     }
 }
 
-/*Media Query para pantallas medianas*/
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .botones {
-        font-size: 1.3rem;
-        width: 20vw;
-        height: 7vh;
-        margin: 0.5vw;
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente un poco mayor para tablets */
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px; /* Tamaño de fuente mayor para desktops */
     }
 }
 
